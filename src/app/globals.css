@@ -1,0 +1,110 @@
+@import "tailwindcss";
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+  --darkreader-inline-color: inherit !important;
+}
+
+:root {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.rye-regular {
+  font-family: "Rye", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.freckle-face-regular {
+  font-family: "Freckle Face", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+
+h1 {
+  font-family: "Rye", serif;
+}
+p {
+  font-family: "DynaPuff", system-ui;
+}
+.dynapuff {
+  font-family: "DynaPuff", system-ui;
+}
+
+.Toastify__toast-container {
+  /* Ensure container matches your app’s layout */
+  z-index: 9999;
+  font-family: var(--font-geist-sans), sans-serif; /* Use Geist font */
+}
+
+/* Base toast styles */
+.Toastify__toast {
+  background: #2d1b4e; /* Dark purple background */
+  color: #ffffff; /* White text */
+  border-radius: 8px;
+  padding: 12px 16px;
+  box-shadow: 0 4px 12px rgba(147, 51, 234, 0.3); /* Purple shadow */
+  font-size: 14px;
+  font-weight: 500;
+}
+
+/* Success toast */
+.Toastify__toast--success {
+  background: #6b21a8; /* Lighter purple for success */
+  border: 1px solid #9333ea; /* Purple border */
+}
+
+/* Info toast */
+.Toastify__toast--info {
+  background: #5b21b6; /* Slightly different purple for info */
+  border: 1px solid #a855f7;
+}
+
+/* Warning toast */
+.Toastify__toast--warning {
+  background: #7e22ce; /* Another purple shade for warning */
+  border: 1px solid #c084fc;
+}
+
+/* Error toast */
+.Toastify__toast--error {
+  background: #9f1239; /* Reddish-purple for error to stand out */
+  border: 1px solid #f43f5e;
+}
+
+/* Progress bar */
+.Toastify__progress-bar {
+  background: #9333ea; /* Purple progress bar */
+}
+
+/* Close button */
+.Toastify__close-button {
+  color: #ffffff;
+  opacity: 0.7;
+  transition: opacity 0.3s;
+}
+.Toastify__close-button:hover,
+.Toastify__close-button:focus {
+  opacity: 1;
+}
+
+/* Icon colors */
+.Toastify__toast-icon svg {
+  fill: #d8b4fe; /* Light purple for icons */
+}
